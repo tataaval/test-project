@@ -9,11 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
+    
+    @IBOutlet weak var lab: UILabel!
+    
+    
+    @IBOutlet weak var input: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        button.setTitle("print", for: .normal)
+        input.placeholder = "enter text"
+        lab.text = input.text ?? ""
     }
 
-
+    @IBAction func printText(_ sender: Any) {
+        lab.text = input.text ?? ""
+    }
+    
 }
 
