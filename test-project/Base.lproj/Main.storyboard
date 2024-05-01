@@ -16,31 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GK-0P-uHM">
-                                <rect key="frame" x="159" y="194" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GK-0P-uHM">
+                                <rect key="frame" x="30" y="183" width="333" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
                                 <connections>
                                     <action selector="printText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ax8-AW-LYT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-rT-ptB">
-                                <rect key="frame" x="107" y="320" width="178" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-rT-ptB">
+                                <rect key="frame" x="30" y="258" width="333" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcm-dw-8vI">
-                                <rect key="frame" x="88" y="121" width="224" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcm-dw-8vI">
+                                <rect key="frame" x="30" y="109" width="333" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pcm-dw-8vI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1NY-P2-cME"/>
+                            <constraint firstItem="0zd-rT-ptB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7p0-5x-hvd"/>
+                            <constraint firstItem="pcm-dw-8vI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LFU-M7-uUj"/>
+                            <constraint firstItem="0GK-0P-uHM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Og8-u6-V0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pcm-dw-8vI" secondAttribute="trailing" constant="30" id="awW-5l-1E4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0zd-rT-ptB" secondAttribute="trailing" constant="30" id="btm-WG-3u4"/>
+                            <constraint firstItem="0zd-rT-ptB" firstAttribute="top" secondItem="0GK-0P-uHM" secondAttribute="bottom" constant="40" id="hHb-HV-r8B"/>
+                            <constraint firstItem="0GK-0P-uHM" firstAttribute="top" secondItem="pcm-dw-8vI" secondAttribute="bottom" constant="40" id="uFN-wh-PPA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0GK-0P-uHM" secondAttribute="trailing" constant="30" id="vPb-sV-gJZ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="0GK-0P-uHM" id="Ucd-43-qdT"/>
